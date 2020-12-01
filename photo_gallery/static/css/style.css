@@ -1,0 +1,11 @@
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.preview-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70%;
+}

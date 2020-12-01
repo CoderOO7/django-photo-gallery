@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+
+    {% block content %}
+
+    <div class="container">
+        <div class="row">
+            <section class="preview-img py-5">
+                <h1 class="preview-img__title p-1">{{image.title}}</h1>
+                <div class="preview-img__wrapper p-1">
+                    <img class="preview-img__image" src="{{image.image.url}}" alt="">
+                </div>
+                <div class="preview-img__actions p-1">
+                    <button class="btn btn-danger">Rotate left</button>
+                    <button class="btn btn-success">Rotate right</button>
+                </div>
+            </section>
+            </div>
+        </div>
+    </div>
+
+    {% endblock %}

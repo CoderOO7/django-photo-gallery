@@ -7,3 +7,6 @@ class GalleryImage(models.Model):
     title = models.CharField(max_length=80)
     summary = models.CharField(max_length=255)
     tags = TaggableManager()
+
+    def __str__(self):
+        return self.title

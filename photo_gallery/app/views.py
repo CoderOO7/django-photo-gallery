@@ -13,11 +13,22 @@ def home(request):
         'images':images
     }
 
-    return render(request,'app/home.html',{'images':images})
+    return render(request,'app/home.html',context)
 
 def details(request, image_id):
     image = get_object_or_404(GalleryImage, pk=image_id)
     return render(request,'app/details.html',{'image':image})
 
-
-    
+def image_upload(request):
+    if request.method == "POST":
+        form = GalleryImageForm(request.POST,request.FILES)
+        if form.is_valid():
+            newImage = form.save(commit=False)
+            newImage.save()
+            #to save input tags below function
+            form.save_m2m()
+            return redirect('home')
+        else:
+            print(form.errors)
+        
+    return render(request,'app/image/upload.html')

@@ -4,8 +4,6 @@ from taggit.managers import TaggableManager
 
 class GalleryImage(models.Model):
     image = models.ImageField(upload_to='images/')
-    title = models.CharField(max_length=80)
-    summary = models.CharField(max_length=255)
     tags = TaggableManager()
 
     def __str__(self):

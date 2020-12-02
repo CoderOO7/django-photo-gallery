@@ -7,7 +7,7 @@
                 <h1>Image Gallery</h1>
                 <p class="lead text-muted">Click on the images to view enlarge image and you can rotate them too</p>
                 <p>
-                    <a href="#" class="btn btn-secondary my-2">Upload Image</a>
+                    <a href="{% url 'image-upload' %}" class="btn btn-secondary my-2">Upload Image</a>
                 </p>
             </div>
         </section>
@@ -19,7 +19,7 @@
                     <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
                             <a href="{% url 'details' image_id=gallery_image.id %}">
-                                <img src="{{gallery_image.image.url}}" alt="gallery image" width="100%" height="225">
+                                <img class="gallery-img" src="{{gallery_image.image.url}}" alt="gallery image">
                                 <!-- <div class="card-body">
                                                     <p class="card-text">This is a wider card with supporting text below as a natural
                                                         lead-in to additional content. This content is a little bit longer.</p>

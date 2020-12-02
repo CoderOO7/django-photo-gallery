@@ -3,19 +3,15 @@
     {% block content%}
 
     <div class="container pt-5">
-        <form method="POST">
+        <form method="POST" enctype="multipart/form-data">
             {% csrf_token %}
-            <div class="form-group">
-                <label>Title</label>
-                <input type="text" class="form-control" name="title" placeholder="Add title">
-            </div>
-            <div class="form-group">
-                <label>Description</label>
-                <textarea type="text" class="form-control" name="description" placeholder="Add description"></textarea>
-            </div>
             <div class="form-group">
                 <label>Tags</label>
                 <input type="text" data-role="tagsinput" class="form-control" name="tags">
+            </div>
+            <div class="form-group">
+                <label>Upload Image</label>
+                <input type="file" class="form-file-control" name="image">
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>

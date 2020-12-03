@@ -30,8 +30,8 @@ It's a photo gallery web app made for practicing django-framework.
 * If the above tools are installed correctly then run below commands to start local server:
     * `$git clone https://github.com/coderoo7/django-photo-gallery`
     * `$cd django-photo-gallery` 
-    * `$pip install requirements.txt`
     * `$pipenv shell` 
+    * `$pip install requirements.txt`
     * `$cd photo_gallery`
     * `$python manage.py runserver` 
 

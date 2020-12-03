@@ -1,7 +1,7 @@
 # DJANGO-PHOTO-GALLERY
 
 It's a photo gallery web app made for practicing django-framework.
-
+![Screenshot](ImageStack.png)
 
 ## Features
 
@@ -18,13 +18,6 @@ It's a photo gallery web app made for practicing django-framework.
 ## Technology Stack
 
 - HTML5/CSS3, Bootstrap, JavaScriptES6, Django framework.
-![Screenshot](ImageStack.png)
-
-## Contribution
-
-1. Clone/fork repository and create a new branch: $ git checkout `https://github.com/CoderOO7/django-photo-gallery.git -b your-branch-name`
-2. Make your changes
-3. Submit a pull request and explain your changes.
 
 ## REQUIREMENTS
 
@@ -43,3 +36,9 @@ It's a photo gallery web app made for practicing django-framework.
     * `$python manage.py runserver` 
 
 * Point browser to [localhost:8000](http://localhost:8000)
+
+## Contribution
+
+1. Clone/fork repository and create a new branch: $ git checkout `https://github.com/CoderOO7/django-photo-gallery.git -b your-branch-name`
+2. Make your changes
+3. Submit a pull request and explain your changes.

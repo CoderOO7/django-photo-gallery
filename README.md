@@ -22,7 +22,9 @@ It's a photo gallery web app made for practicing django-framework.
 
 ## Contribution
 
-If you like to contribute then clone this repo `https://github.com/coderoo7/django-photo-gallery` and push your changes to 
+1. Clone/fork repository and create a new branch: $ git checkout `https://github.com/CoderOO7/django-photo-gallery.git -b your-branch-name`
+2. Make your changes
+3. Submit a pull request and explain your changes.
 
 ## REQUIREMENTS
 
